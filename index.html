@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Snigdha ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Audio -->
+    <audio id="bg-music" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Control Button -->
+    <button id="music-btn" class="music-toggle" aria-label="Toggle Music">
+        <span id="music-icon">🎵</span>
+    </button>
+
+    <!-- Canvas Containers for Animation FX -->
+    <canvas id="particle-canvas"></canvas>
+    <div id="hearts-container"></div>
+    <div id="petals-container"></div>
+
+    <!-- Screen 1: Welcome Screen -->
+    <section id="welcome-screen" class="screen active">
+        <div class="welcome-content">
+            <h1 class="glow-text">Hello Snigdha ❤️</h1>
+            <p class="sub-text pulse">Wait.........</p>
+        </div>
+    </section>
+
+    <!-- Screen 2: Gift Box Screen -->
+    <section id="gift-screen" class="screen hidden">
+        <div class="gift-container" id="gift-box">
+            <div class="gift-bow"></div>
+            <div class="gift-lid"></div>
+            <div class="gift-body"></div>
+            <p class="click-hint">Tap to Open Your Gift 🎁</p>
+        </div>
+    </section>
+
+    <!-- Screen 3: Main Celebration & Love Letter -->
+    <section id="main-screen" class="screen hidden">
+        <div class="content-wrapper">
+            <!-- Typing Effect Header -->
+            <div class="typing-container">
+                <h1 id="typing-text"></h1>
+            </div>
+
+            <!-- Glassmorphism Love Letter -->
+            <div class="glass-card" id="love-letter">
+                <div class="card-border"></div>
+                <h2>To My Beloved Snigdha</h2>
+                <p>Every heartbeat whispers your name.</p>
+                <p>Every smile reminds me of you.</p>
+                <p>You are the most beautiful part of my life.</p>
+                <p class="letter-footer">❤️ I LOVE YOU ❤️</p>
+            </div>
+
+            <!-- 100 Love Messages Grid -->
+            <div class="love-grid" id="love-grid"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
